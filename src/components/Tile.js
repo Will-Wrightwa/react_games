@@ -6,24 +6,14 @@ class Tile extends Component {
     this.state = {foo:"bar"}
   }
   render() {
-    const margin = 0
+    const margin = 0.1
     const size = ((1/8)* 100 - (2 * margin))
-    const wrapper = {
-      // margin: margin + "%",
-      width: size + "%",
-      paddingTop: size  + "%",
-      position: 'relative',
-      display: "inline-block",
-      overflowY: 'hidden'
 
-    }
     const style = {
-      backgroundColor: this.props.color,
-      position: 'absolute',
-      top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0
+      margin: margin + "%",
+      width: size + "%",
+      height: size + "%",
+      backgroundColor: this.props.color
     };
 
     return (

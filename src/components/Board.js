@@ -19,18 +19,15 @@ class Board extends Component {
       ]
     const colors = ["grey","black"]
     const style = {
-      marginLeft: "auto",
-      marginRight: "auto",
-
-      width: "30%",
+      width: "40vmin",
+      height: "40vmin",
       display: "flex",
       flexWrap:"wrap",
-      margin:0,
-      padding:0
-
+      padding:"0.5%",
+      border: "solid brown 3px"
     }
     // let bd = arr.map((row)=>row.map((t)=> < Tile color={ colors[t] } />))
-    let bd = arr.map((t)=> < Tile color={ colors[t] } />)
+    let bd = arr.map((t)=> < Tile color={ colors[t] }  />)
     console.log( bd )
       return (<div style={{display:"inline-block"}}>
         <div style={style} >
